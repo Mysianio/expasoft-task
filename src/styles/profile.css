@@ -1,0 +1,102 @@
+.userProfileWrap{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.userProfile{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 20px;
+  height: 550px;
+  width: 900px;
+}
+.userProfile .userProfilePhotoAndSettings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userProfile .userProfilePhotoAndSettings img{
+  width: 200px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.userProfile .userProfilePhotoAndSettings input{
+  border: 1px solid #323433;
+  background: #323433;
+  color: #fff;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s;
+  cursor: pointer;
+}
+.userProfile .userProfilePhotoAndSettings input:hover{
+  border: 1px solid #323433;
+  background: #fff;
+  color: #323433;
+}
+.userProfile .userProfilePhotoAndSettings input:focus{
+  outline: none;
+}
+.userProfileMain{
+  margin: 15px;
+}
+.userProfile .userProfileMain h4{
+  margin: 0;
+  font-size: 40px;
+}
+.userProfile .userProfileMain span{
+  font-size: 15px;
+}
+.userProfile .userProfileMain h5{
+  font-size: 18px;
+}
+.userProfileInfo{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.userProfileInfo span{
+  margin-top: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.userProfileInfo a{
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (min-height: 1000px) {
+  .userProfile{
+    width: 1100px;
+    height: 750px;
+  }
+  .userProfile .userProfilePhotoAndSettings img{
+    width: 300px;
+  }
+  .userProfile .userProfilePhotoAndSettings input{
+    height: 60px;
+    width: 300px;
+  }
+  .userProfile .userProfileMain h4{
+    font-size: 60px;
+  }
+  .userProfile .userProfileMain span{
+    font-size: 23px;
+  }
+  .userProfile .userProfileMain h5{
+    font-size: 25px;
+  }
+  .userProfile .userProfileMain p{
+    font-size: 23px;
+  }
+  .userProfileInfo span{
+    margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+}

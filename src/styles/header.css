@@ -1,0 +1,50 @@
+.margin{
+  height: 70px;
+  background: #343434;
+}
+.scrolled{
+  top: -100px;
+}
+
+header{
+  position: fixed;
+  top:0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+  background: #323433;
+  transition: .5s;
+}
+header ul{
+  margin: 0;
+  margin-right: 50px;
+  list-style: none;
+  display: flex;
+}
+header button{
+  padding: 0 20px;
+  font-family: "Hepta Slab";
+  height: 70px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+header h3{
+  margin-left: 50px;
+}
+header button:hover{
+  background: #4f5250;
+}
+header button:focus{
+  outline: none;
+}
+header a{
+  text-decoration: none;
+  color: #fff;
+}
+header span{
+  color: red;
+}

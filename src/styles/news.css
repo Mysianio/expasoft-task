@@ -1,0 +1,111 @@
+.newsBlock{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.newsBlock::after{
+  content: " ";
+  width: 400px;
+}
+.newsElement{
+  margin-left: 45px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  border: 1px solid #000;
+  background: #fff;
+  width: 400px;
+  height: 350px;
+}
+.newsElement:hover{
+  box-shadow: 0px 0px 15px 5px #ccc;
+}
+.newsElement img{
+  width: 400px;
+}
+.newsElement h2, .newsElement p{
+  margin-left:15px;
+  margin-right: 15px;
+}
+.newsBigScreenWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+.newsBigScreenWrap .blackBackground{
+  position: absolute;
+  background: #000;
+  opacity: .7;
+  height: 100vh;
+  width: 100vw;
+}
+.newsBigScreenWrap .newsBigScreen{
+  overflow-y: auto;
+  margin: 0 auto;
+  position: relative;
+  max-width: 980px;
+  max-height: 570px;
+  background: #fff;
+}
+.newsBigScreenWrap .newsBigScreen::-webkit-scrollbar {
+    width: 6px;
+    background: #fff;
+}
+.newsBigScreenWrap .newsBigScreen::-webkit-scrollbar-thumb{
+  width:5px;
+  background: #343434;
+}
+.newsBigScreenInfo{
+  display: flex;
+  margin: 40px 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.newsBigScreenWrap .newsBigScreen input{
+  border: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  background: transparent;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  transition: .2s;
+}
+.newsBigScreenWrap .newsBigScreen input:hover{
+  background: #343434;
+  color: #fff;
+}
+.newsBigScreenWrap .newsBigScreen span{
+  color: #aaa;
+  position: absolute;
+  right: 15px;
+  top:20px;
+}
+.newsBigScreenWrap .newsBigScreen input:focus{
+  outline: none;
+}
+.newsBigScreenWrap .newsBigScreenInfo h2{
+  font-size: 35px;
+}
+@media screen and (min-height: 1000px){
+  .newsBigScreen{
+    max-height: 900px !important;
+    max-width: 1300px !important;
+  }
+  .newsBigScreenInfo h2{
+    font-size: 50px !important;
+  }
+  .newsBigScreenInfo p{
+    font-size: 28px;
+  }
+}
